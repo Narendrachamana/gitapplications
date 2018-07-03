@@ -1,0 +1,34 @@
+
+ package com.PageOfModel;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class NewToursHHomePageTesting {
+
+	WebDriver driver;
+	@BeforeTest
+	public void Setup()
+	{
+		System.setProperty("webdriver.chrome.driver", "D:\\Java-Eclipse\\SeleniumFW\\Resources\\chromedriver.exe");
+		driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.get("http://newtours.demoaut.com");
+	}
+	@Test
+	public void HomePageTesting()
+	{
+		WelcomeMercuryTours wmt=PageFactory.initElements(driver, WelcomeMercuryTours.class);
+		wmt.signon();
+		driver.navigate().back();
+		wmt.Register();
+		driver.navigate().back();
+		wmt.FightAFlight("tutorial","tutorial");
+	}
+}

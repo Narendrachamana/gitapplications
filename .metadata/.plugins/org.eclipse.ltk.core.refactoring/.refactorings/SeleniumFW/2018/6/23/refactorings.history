@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;resources&apos;&#x0D;&#x0A;- Original project: &apos;SeleniumFW&apos;&#x0D;&#x0A;- Destination element: &apos;resources&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     IEDriverServer.exe&#x0D;&#x0A;     geckodriver.exe" description="Copy files" element1="Resources/IEDriverServer.exe" element2="Resources/geckodriver.exe" files="2" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1528365459392" target="/testNg/resources" units="0" version="1.0"/>
+</session>

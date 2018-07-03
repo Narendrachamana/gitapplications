@@ -1,0 +1,19 @@
+package com.Test;
+
+import org.testng.annotations.Test;
+
+import com.Base.BaseSetup;
+import com.utilities.ReadProperty;
+
+public class Test1 extends BaseSetup{
+
+	ReadProperty rp=new ReadProperty("TestData");
+	
+	@Test
+	void demo() {
+		
+		
+	}
+	
+	
+}

@@ -1,0 +1,36 @@
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+
+public class FbScrnSht {
+	public static void main(String args[]) throws IOException {
+		WebDriver driver;
+		System.setProperty("webdriver.chrome.driver", "D:\\Java-Eclipse\\SeleniumDemo\\resources\\chromedriver.exe");
+		driver=new ChromeDriver();
+		driver.get("https://www.facebook.com/");
+		//JavascriptExecutor js=(JavascriptExecutor) driver;
+		//js.
+		driver.findElement(By.id("email"));
+		String path="E:\\fb screensot";
+		TakesScreenshot  ts=(TakesScreenshot) driver;
+		File src=ts.getScreenshotAs(OutputType.FILE);
+		File dest=new File(path);
+		FileUtils.copyFile(src, dest);
+		
+		
+		
+		
+		 
+		
+	}
+
+}

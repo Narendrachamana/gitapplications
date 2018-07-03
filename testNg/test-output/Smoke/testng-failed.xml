@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Smoke]">
+  <test thread-count="5" name="Sanity(failed)">
+    <classes>
+      <class name="com.Test.AddAd">
+        <methods>
+          <include name="setup"/>
+          <include name="verifyAddAd"/>
+        </methods>
+      </class> <!-- com.Test.AddAd -->
+      <class name="com.Test.Login">
+        <methods>
+          <include name="setup"/>
+          <include name="verifylogin"/>
+        </methods>
+      </class> <!-- com.Test.Login -->
+      <class name="com.Test.Register">
+        <methods>
+          <include name="setup"/>
+          <include name="verifyRegister"/>
+        </methods>
+      </class> <!-- com.Test.Register -->
+    </classes>
+  </test> <!-- Sanity(failed) -->
+</suite> <!-- Failed suite [Smoke] -->

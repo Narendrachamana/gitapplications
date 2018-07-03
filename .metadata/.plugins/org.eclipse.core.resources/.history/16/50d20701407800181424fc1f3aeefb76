@@ -1,0 +1,21 @@
+package com.Base;
+
+import java.io.File;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.annotations.BeforeClass;
+
+public class BroswerEdge {
+WebDriver driver;
+	@BeforeClass
+	public void setup() {
+
+
+			System.setProperty("webdrive.edge.driver", "D:\\Java-Eclipse\\SeleniumFW\\Resources\\IEDriverServer.exe");
+			driver = new EdgeDriver();
+			driver.get("http://facebook.com");
+		}
+
+
+}

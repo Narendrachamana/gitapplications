@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Smoke" verbose="1" >  <!-- BeforeSuite -->
+  <test name="Sanity" >  <!-- BeforeTest -->
+    <classes> 
+       <class name="com.Test.Register" /> <!-- BeforeClass, AfterClass -->
+       <class name="com.Test.Login" /> <!-- BeforeClass, AfterClass -->
+        <class name="com.Test.AddAd" /> <!-- BeforeClass, AfterClass -->
+       
+    </classes>
+  </test> <!-- AfterTest -->
+ 
+</suite> <!-- AfterSuite -->

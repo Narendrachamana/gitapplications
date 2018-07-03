@@ -1,0 +1,10 @@
+package com.exceloperations;
+
+public class Excelwriteoperation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

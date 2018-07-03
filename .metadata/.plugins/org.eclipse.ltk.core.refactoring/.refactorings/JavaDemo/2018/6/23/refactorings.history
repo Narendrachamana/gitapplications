@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;narendra/src/com.narendra&apos;&#x0D;&#x0A;- Original project: &apos;JavaDemo&apos;&#x0D;&#x0A;- Destination element: &apos;narendra/src/com.narendra&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Array_Object.java&#x0D;&#x0A;     Array_List_Example.java&#x0D;&#x0A;     Array_MultiDimentional.java" description="Copy compilation units" destination="=narendra/src&lt;com.narendra" element1="/src&lt;{Array_Object.java" element2="/src&lt;{Array_List_Example.java" element3="/src&lt;{Array_MultiDimentional.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1528289709663" units="3" version="1.0"/>
+</session>

@@ -1,0 +1,40 @@
+package com.utilities;
+
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
+
+public class FileUpload {
+	
+	Static upload(String filename) {
+		 try {
+      	   
+      	   String filePath=System.getProperty("user.dir")+"\\UploadFiles\\"+filename;
+      	   
+      	   System.out.println(filePath);
+         StringSelection stringSelection = new StringSelection(filePath);
+		   Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
+//         setClipboardData("C:\\Users\\narendra\\Desktop\\yuva ticket.jpg");
+         //native key strokes for CTRL, V and ENTER keys
+         Robot robot = new Robot();
+         
+         Thread.sleep(2000);
+    
+         robot.keyPress(KeyEvent.VK_CONTROL);
+         robot.keyPress(KeyEvent.VK_V);
+         robot.keyRelease(KeyEvent.VK_V);
+         robot.keyRelease(KeyEvent.VK_CONTROL);
+         Thread.sleep(2000);
+         robot.keyPress(KeyEvent.VK_ENTER);
+         robot.keyRelease(KeyEvent.VK_ENTER);
+        
+
+
+	}
+  catch(Exception e) {
+  	System.out.println(e);
+  }
+	}
+
+}

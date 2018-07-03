@@ -1,0 +1,16 @@
+package com.narendra;
+class AB1 {
+	int x=20;
+	void main() {
+		int y=10;
+		System.out.println(y);
+		
+	}
+	public static void main(String args[]) {
+		AB1 obj=new AB1();
+	System.out.println(obj.x);
+	obj.main();
+		
+	}
+
+}

@@ -1,0 +1,20 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Input {
+	public static void main(String args[])
+	{
+		WebDriver driver;
+		System.setProperty("webdriver.chrome.driver","D:\\Java-Eclipse\\SeleniumDemo\\resources\\chromedriver.exe");
+		driver= new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://localhost/colour/");
+		WebElement ele=driver.findElement(By.xpath("//a[text()='Register']")).click();
+		
+		
+		
+	
+}
+}

@@ -1,0 +1,15 @@
+package com.webtables;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class WebtalesForDateAndTimes {
+
+	public static void main(String[] args) {
+        System.setProperty("webdriver.gecko.driver", "D:\\Java-Eclipse\\balaji\\libraries\\geckodriver.exe");
+		WebDriver driver =new FirefoxDriver();
+		driver.get("https://www.timeanddate.com/worldclock/");
+		
+	}
+
+}

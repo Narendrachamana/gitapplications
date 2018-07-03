@@ -1,0 +1,25 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Input {
+	public static void main(String args[]) throws InterruptedException {
+		
+	
+		WebDriver driver;
+		System.setProperty("webdriver.chrome.driver","D:\\Java-Eclipse\\SeleniumDemo\\resources\\chromedriver.exe");
+		driver= new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://localhost/colour/");
+		driver.findElement(By.xpath("//a[text()='Register']")).click();
+		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("narendra10@gmail.com");
+		driver.findElement(By.xpath("//input[@name='name']")).sendKeys("narendra");		
+		driver.findElement(By.xpath("//input[@name='passwd']")).sendKeys("123456");
+		driver.findElement(By.xpath("//input[@name='passwd2']")).sendKeys("123456");
+		driver.findElement(By.xpath("//input[@name='emelding']")).click();
+		driver.findElement(By.xpath("//input[@name='hide_email']")).click();
+		driver.findElement(By.xpath("//input[@name='agree_cond']")).click();
+		
+}
+}

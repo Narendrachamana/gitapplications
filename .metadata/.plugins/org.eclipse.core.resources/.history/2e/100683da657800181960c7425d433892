@@ -1,0 +1,16 @@
+package com.practice;
+
+import org.apache.xalan.xsltc.compiler.sym;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Applicationregister
+{
+
+	public static void main(String[] args) 
+	{
+     System.setProperty("webdriver.gecko.driver", "")
+     WebDriver driver =new FirefoxDriver();
+	}
+
+}
