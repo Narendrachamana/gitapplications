@@ -9,7 +9,11 @@ public static void main(String args[]) {
 
 AB obj=new AB();
 
-System.out.println(obj.x);
+//EMP12345 20-12-2018 updating based TAskId/UserstoryID
+//System.out.println(obj.x);
+int y=obj.x;
+System.out.println(y);
+
 
 }
 }
