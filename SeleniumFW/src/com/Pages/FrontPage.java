@@ -22,11 +22,12 @@ public class FrontPage {
 			
 			WebElement login=driver.findElement(By.xpath(loginLink_xpath));
 			login.click();
+			
 		}
 	
 		
 		
-	
+	//jyosthna_15th august adding for git hub test purpose
 			
 			
 		
